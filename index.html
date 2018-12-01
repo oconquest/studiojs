@@ -120,7 +120,7 @@ var s4= "arr[3];\n\n document.body.appendChild(makeTr);\n\n" + "document.getElem
 
 var s5="for(;" + document.getElementById("tablenum").value + "arr[3]*rows > " + document.getElementById("tablenum").value + "arr[4]; " + document.getElementById("tablenum").value + "arr[4]+=1){" + 'makeTd=document.createElement("td");\n\n'+'makeTd.id=' + document.getElementById("tablenum").value +"arr[5] + " ;
 
-var s6=document.getElementById("tablenum").value + "arr[4];\n\n" + 'makeTd.style.backgroundColor="orange";\n\n makeTd.style.width="5px";\n\n makeTd.style.height="5px";\n\n makeTd.style.borderWidth="1px";\n\n makeTd.style.borderColor="grey"; \n\n makeTd.style.borderStyle="ridge";\n\n document.body.appendChild(makeTd);\n\n';
+var s6=document.getElementById("tablenum").value + "arr[4];\n\n" + 'makeTd.style.backgroundColor="orange";\n\n makeTd.style.width="0px";\n\n makeTd.style.height="0px";\n\n makeTd.style.borderWidth="0px";\n\n makeTd.style.borderColor="grey"; \n\n makeTd.style.borderStyle="ridge";\n\n document.body.appendChild(makeTd);\n\n';
 
 var s7= "document.getElementById(" + document.getElementById("tablenum").value + "arr[0] + " + document.getElementById("tablenum").value + "arr[3]).appendChild(makeTd);\n\n}\n\n}\n\n" + "function create" + document.getElementById("tablenum").value + "Tr(){\n\n var columns= " +document.getElementById("tablenum").value + "arr[2];\n\n if(" +document.getElementById("tablenum").value + "arr[3] != columns){\n\n" + document.getElementById("tablenum").value + "maker();\n\n}\n\n}\n\n" + "window.onload= function start" + document.getElementById("tablenum").value + "build(){\n\n" + document.getElementById("tablenum").value + "myVar = setInterval(create" +document.getElementById("tablenum").value + "Tr,0);\n\n create" + document.getElementById("tablenum").value + "();\n\n setTimeout(function(){clearInterval("+ document.getElementById("tablenum").value + "myVar); },10000);\n\n}\n\n"; 
 
@@ -286,11 +286,11 @@ makeTd.onclick= function(){ paintid= this.id; paint();                 };
 
 makeTd.style.backgroundColor="orange";
 
-makeTd.style.width="5px";
+makeTd.style.width="0px";
 
-makeTd.style.height="5px";
+makeTd.style.height="0px";
 
-makeTd.style.borderWidth="1px";
+makeTd.style.borderWidth="0px";
 
 makeTd.style.borderColor="grey";
 
