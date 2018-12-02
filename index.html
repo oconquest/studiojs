@@ -168,7 +168,12 @@ var elements=document.getElementsByTagName("TD");
 
 for (var i = 0; i < elements.length; i++) {
 
-setTimeout(function(){if(elements[i].style.display != "none"){if(localStorage.getItem(elements[i].id) != null){document.getElementById("textarea").value+= localStorage.getItem(elements[i].id);document.getElementById("textarea2").value+="run(document.getElementById('textarea').value);"}}},1000);
+setTimeout(function(){
+ if(elements[i].style.display != "none"){
+if(localStorage.getItem(elements[i].id) != null){
+document.getElementById("textarea").value+= localStorage.getItem(elements[i].id);
+document.getElementById("textarea2").value+="run(document.getElementById('textarea').value);";
+}}},1000);
 
 }        
 
