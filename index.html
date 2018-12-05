@@ -164,21 +164,24 @@ function getoption(){
 
 document.getElementById("textarea").value+= localStorage.getItem(document.getElementById("tablenum").value);
 
-var elements=document.getElementsByTagName("TD");
+var elements=document.getElementById("rowsnum").value * document.getElementById("columnnum").value;
 
 for (var i = 0; i < elements.length; i++) {
 
+document.getElementById("textarea").value+=  localStorage.getItem(document.getElementById("tdid").value + i);
 
- if(elements[i].style.display != "none"){
-if(localStorage.getItem(elements[i].id) != null){
-document.getElementById("textarea").value+= localStorage.getItem(elements[i].id);
-document.getElementById("textarea2").value+="run(document.getElementById('textarea').value);";
+document.getElementById("textarea2").value="run(document.getElementById('textarea').value);";
 
-            } 
-} 
-}        
+            }
 
 }
+
+
+           
+
+
+
+
 
 var tr=0;
 
