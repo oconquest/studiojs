@@ -27,8 +27,8 @@ if(elements[i].style.display != "none"){
 
 if(localStorage.getItem(elements[i].id) != null){
 
-colorsload= localStorage.getItem(elements[i].id);
-    
+colorsload+= localStorage.getItem(elements[i].id);
+document.getElementById("textarea").value+=colorsload;    
 }   
      
 }
@@ -164,16 +164,8 @@ function getoption(){
 
 document.getElementById("textarea").value+= localStorage.getItem(document.getElementById("tablenum").value);
 
-var elements=document.getElementById("rowsnum").value * document.getElementById("columnnum").value;
-
-for (var i = 0; i < elements.length; i++) {
-
-document.getElementById("textarea").value+=  localStorage.getItem(document.getElementById("tdid").value + i);
-
-document.getElementById("textarea2").value="run(document.getElementById('textarea').value);";
-
-            }
-
+//var elements=document.getElementById("rowsnum").value * document.getElementById("columnnum").value;
+secondsave();
 }
 
 
